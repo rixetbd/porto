@@ -6,7 +6,9 @@ use App\Http\Controllers\Controller;
 use App\Models\frontend\ClientsMail;
 use Carbon\Carbon;
 use Flasher\Notyf\Prime\NotyfFactory;
+use GuzzleHttp\Psr7\Message;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class MailController extends Controller
 {
@@ -16,7 +18,7 @@ class MailController extends Controller
             'name'=>'required',
             'email'=>'required',
             'subject'=>'required',
-            'link'=>'required',
+            // 'link'=>'required',
             'message'=>'required',
         ]);
 
@@ -30,6 +32,21 @@ class MailController extends Controller
         ]);
 
         $flasher->addSuccess('Thanks for contact.');
+
+        $data = array(
+            'name'=>$request->name,
+            'email'=>$request->email,
+            'subject'=>$request->subject,
+            'link'=>$request->link,
+            'Bodymessage'=>$request->message,
+        );
+
+        Mail::send('emails.contactMail', $data, function($message) use ($data){
+            $message->from($data['email']);
+            $message->to('mdrabiulislam.r12@gmail.com');
+            $message->subject($data['subject']);
+        });
+
         return back();
     }
 }

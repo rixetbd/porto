@@ -53,13 +53,16 @@
     </div>
 
     <div class="col-xl-9">
+        @if (Route::currentRouteName() != "admin.email.compose")
         <div class="row">
             <div class="col-md-7">
                 <div class="btn-toolbar" role="toolbar">
                     <div class="btn-group me-2 mb-3">
                         <button type="button" class="btn btn-primary waves-light waves-effect"><i class="fa fa-inbox"></i></button>
                         <button type="button" class="btn btn-primary waves-light waves-effect"><i class="fa fa-exclamation-circle"></i></button>
-                        <button type="button" class="btn btn-primary waves-light waves-effect"><i class="far fa-trash-alt"></i></button>
+                        @if (Route::currentRouteName() != "admin.email.inbox" && Route::currentRouteName() != "admin.email.compose")
+                            <a type="button" class="btn btn-primary waves-light waves-effect" href="{{route('admin.email.single_delete' , $mail_id)}}"><i class="far fa-trash-alt"></i></a>
+                        @endif
                     </div>
                     <div class="btn-group me-2 mb-3">
                         <button type="button" class="btn btn-primary waves-light waves-effect dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -91,7 +94,13 @@
                             More <i class="mdi mdi-dots-vertical ms-1"></i>
                         </button>
                         <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="#">Mark as Unread</a>
+
+
+                                @if (Route::currentRouteName() != "admin.email.inbox")
+                                    <a class="dropdown-item" href="{{route('admin.email.markasread' , $mail_id)}}">Mark as Unread</a>
+                                @endif
+
+
                             <a class="dropdown-item" href="#">Mark as Important</a>
                             <a class="dropdown-item" href="#">Add to Tasks</a>
                             <a class="dropdown-item" href="#">Add Star</a>
@@ -101,6 +110,7 @@
                 </div>
             </div>
         </div>
+        @endif
 
         <div class="card mb-0">
             @yield('email_content')

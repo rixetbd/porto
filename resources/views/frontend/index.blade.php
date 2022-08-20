@@ -27,7 +27,7 @@
 	  <div class="utf-fixed-block block-right">
 		<ul class="list-unstyled languages-list">
 
-		  <li><a href="#"><span class="single-language">ENG</span></a></li>
+		  {{-- <li><a href="#"><span class="single-language">ENG</span></a></li> --}}
 		  {{-- <li><a href="#"><span class="single-language">RUS</span></a></li>
 		  <li><a href="#"><span class="single-language">CEB</span></a></li> --}}
 		</ul>

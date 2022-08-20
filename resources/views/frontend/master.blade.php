@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 <head>
 <meta name="author" content="">
 <meta name="description" content="">
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>RixetBD</title>
-<meta property="og:title" content="RixetBD Portfolio" />
+
+<meta property="og:title" content="Muhammad Rabiul || RixetBD">
 <meta property="og:site_name" content="RixetBD" />
-<meta property="og:type" content="article" />
-<meta property="og:description" content="RixetBD Portfolio Description" />
-<meta property="og:image" itemprop="image" content="https://scontent-sin6-2.xx.fbcdn.net/v/t39.30808-6/267858033_197313275950173_4664983690733003987_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeEi0LqO-DlaMgeulxBciU-fJNYbc_8fhX4k1htz_x-Ffv6tidO4wTKRLIWMej87EJ14Z5BFeSgVXaX1GNfHRss6&_nc_ohc=26k-ZtFK5swAX-5pMye&_nc_ht=scontent-sin6-2.xx&oh=00_AT9bCkV56dPyLOpzEBpse47FUkWjPUqwA5TFNKpTmZe3zQ&oe=6226B2B5" />
-<meta property="og:url" content="https://rixetbd.github.io/portfolio/" />
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://i.ibb.co/Ydwtx4v/Portfolio-SS.png">
+<meta property="og:description" content="I’m Full Stack Web Developer who has had the privilege of working with many startups, small and large, as well as individuals and entrepreneurs. A designer who specialises in web based projects and online marketing, helping to build businesses.">
+<meta property="og:url" content="https://rixetbd.com/">
 <meta property="og:image:width" content="1024" />
 <meta property="og:image:height" content="1024" />
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="facebook_banner.png">
-<link rel="image_src" href="share_banner.png">
+<meta name="twitter:image" content="https://i.ibb.co/Ydwtx4v/Portfolio-SS.png">
+<link rel="image_src" href="https://i.ibb.co/Ydwtx4v/Portfolio-SS.png">
+
 
 <!--Favicon-->
 <link rel="shortcut icon" href="img/favicon.png">

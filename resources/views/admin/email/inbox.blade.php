@@ -52,7 +52,7 @@
                         <a href="{{route('admin.email.readpage', $mail->id)}}" class="title" style="left: 60px;">{{$mail->name}}</a>
                     </div>
                     <div class="col-mail col-mail-2" style="left: 220px;">
-                        <a href="{{route('admin.email.readpage', $mail->id)}}" class="subject"><span class="bg-success badge me-2">{{Str::limit($mail->subject, 10)}}</span>{{$mail->message}}</a>
+                        <a href="{{route('admin.email.readpage', $mail->id)}}" class="subject"><span class="bg-success badge me-2">{{Str::limit($mail->subject, 20)}}</span>{{$mail->message}}</a>
                         <div class="date" style="width: 200px;"><a href="{{route('admin.email.readpage', $mail->id)}}">{{$mail->created_at->diffForHumans()}}</a></div>
                     </div>
                 </li>
