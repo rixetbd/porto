@@ -66,8 +66,8 @@
     <li class="icon-box tooltip {{ ($pageClass == 'home'?'active':'')}}"><i class="fa fa-home"></i> <a href="{{route('frontend.home')}}"></a><span class="tooltiptext tooltip-right">Home</span></li>
     <li class="icon-box tooltip {{ ($pageClass == 'about'?'active':'')}}"><i class="fa fa-id-card"></i> <a href="{{route('frontend.about')}}"></a><span class="tooltiptext tooltip-right">About Me</span></li>
     <li class="icon-box tooltip {{ ($pageClass == 'portfolio'?'active':'')}} {{ ($pageClass == 'portfolio_single'?'active':'')}}"><i class="fa fa-image"></i> <a href="{{route('frontend.portfolio')}}"></a><span class="tooltiptext tooltip-right">My Works</span></li>
-    <li class="icon-box tooltip {{ ($pageClass == 'contact'?'active':'')}}"><i class="fa fa-envelope"></i> <a href="{{route('frontend.contact')}}"></a><span class="tooltiptext tooltip-right">Contact</span></li>
     <li class="icon-box tooltip {{ ($pageClass == 'blog'?'active':'')}} {{ ($pageClass == 'blog_post'?'active':'')}} "><i class="fa fa-globe"></i> <a href="{{route('frontend.blog')}}"></a><span class="tooltiptext tooltip-right">Blog Post</span></li>
+    <li class="icon-box tooltip {{ ($pageClass == 'contact'?'active':'')}}"><i class="fa fa-envelope"></i> <a href="{{route('frontend.contact')}}"></a><span class="tooltiptext tooltip-right">Contact</span></li>
   </ul>
   <!-- Fixed Navigation Ends -->
   <!-- Mobile Menu Starts -->

@@ -38,8 +38,6 @@ Route::middleware('auth')->group(function () {
     Route::controller(ProfileController::class)->group(function(){
         Route::get('/admin/profile', 'index')->name('admin.profile');
         Route::get('/admin/profile/add', 'addPage')->name('admin.profile.add');
-        Route::get('/admin/downloadCVPdfFile', 'downloadCVPdfFile')->name('admin.downloadCVPdfFile');
-
         Route::post('/admin/user/update', 'userUpdate')->name('admin.user.update');
     });
 
@@ -171,6 +169,7 @@ Route::controller(FrontendController::class)->group(function(){
 });
 
 
+Route::get('/admin/downloadCVPdfFile', [ProfileController::class, 'downloadCVPdfFile'])->name('admin.downloadCVPdfFile');
 
 
 Route::post('/clients/email', [MailController::class,'mail_post'])->name('frontend.mail');
