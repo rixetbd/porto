@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 12, 2022 at 04:04 AM
+-- Generation Time: Aug 20, 2022 at 10:14 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -47,7 +47,8 @@ CREATE TABLE `about_infos` (
 --
 
 INSERT INTO `about_infos` (`id`, `name`, `designation`, `email`, `date`, `phone`, `nationality`, `description`, `picture`, `status`, `created_at`, `updated_at`) VALUES
-(1, 'Rabiul Islam', 'Web Developer', 'rixetbd@gmail.com', '2000-07-15', '01773800869', 'BD', '<p>I&rsquo;m Muhammad Rabiul, A Full Stack Web Developer who has had the privilege of working with many startups, small and large, as well as individuals and entrepreneurs. A designer who specialises in web based projects and online marketing, helping to build businesses.</p>', '1__2022-03-11.png', 1, '2022-03-11 09:23:21', '2022-03-11 09:23:23');
+(1, 'Rabiul Islam', 'Web Developer', 'rixetbd@gmail.com', '2000-07-15', '01773800869', 'BD', '<p>I&rsquo;m Muhammad Rabiul, A Full Stack Web Developer who has had the privilege of working with many startups, small and large, as well as individuals and entrepreneurs. A designer who specialises in web based projects and online marketing, helping to build businesses.</p>', '1__2022-03-11.png', 1, '2022-03-11 09:23:21', '2022-08-20 17:25:54'),
+(2, 'Rabiul Islam', 'Web Developer', 'rixetbd@gmail.com', '2000-07-15', '+8801773800869', 'BD', '<p>I&rsquo;m Muhammad Rabiul, A Full Stack Web Developer who has had the privilege of working with many startups, small and large, as well as individuals and entrepreneurs. A designer who specialises in web based projects and online marketing, helping to build businesses.</p>', '2__2022-08-20.png', 0, '2022-08-20 17:25:41', '2022-08-20 17:25:54');
 
 -- --------------------------------------------------------
 
@@ -92,6 +93,14 @@ CREATE TABLE `blogs` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `blogs`
+--
+
+INSERT INTO `blogs` (`id`, `author`, `title`, `category`, `thumbnail`, `description`, `status`, `deleted_at`, `created_at`, `updated_at`) VALUES
+(1, 2, 'Ducimus rerum asper', 'Qui quidem autem deb', '1_Blog_629cf079eaac0.jpg', '<p>efewagergergergeargaegba</p>', 1, NULL, '2022-06-05 18:05:45', '2022-06-05 18:05:46'),
+(2, 2, 'Ab officia voluptate', 'Minima aute fugit c', '2_Blog_629cf0c279e98.jpg', '<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>\r\n<p>&nbsp;</p>\r\n<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>\r\n<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>\r\n<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>\r\n<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>', 1, NULL, '2022-06-05 18:06:58', '2022-06-05 18:06:58');
+
 -- --------------------------------------------------------
 
 --
@@ -125,6 +134,17 @@ CREATE TABLE `clients_mails` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `clients_mails`
+--
+
+INSERT INTO `clients_mails` (`id`, `name`, `email`, `subject`, `link`, `message`, `status`, `created_at`, `updated_at`) VALUES
+(4, 'Rahim Frank', 'wuwej@nomail.com', 'Doloribus earum qui', 'https://www.vecocyqaxaqebyn.com', 'Hello Everyone! Have a great day :) I am here to help you. If you want to know something or you have any suggestion then please mail me. Thank You.\r\n\r\nHello Everyone! Have a great day :) I am here to help you. If you want to know something or you have any suggestion then please mail me. Thank You. Hello Everyone! Have a great day :) I am here to help you. If you want to know something or you have any suggestion then please mail me. Thank You.', 1, '2022-08-20 18:06:22', '2022-08-20 18:06:46'),
+(5, 'Yoshi Pope', 'vyqujyxab@nomail.com', 'Rerum et laboris par', 'https://www.jofohevugeju.ws', 'Hello Everyone! Have a great day :) I am here to help you. If you want to know something or you have any suggestion then please mail me. Thank You.', 1, '2022-08-20 18:45:54', '2022-08-20 18:51:00'),
+(6, 'Gage Rosa', 'vefa@nomail.com', 'Aliqua Sint pariatu', 'https://www.tiwinek.us', 'Hello Everyone! Have a great day :) I am here to help you. If you want to know something or you have any suggestion then please mail me. Thank You.', 1, '2022-08-20 18:48:51', '2022-08-20 18:50:57'),
+(7, 'Bethany Chambers', 'nalaqehys@nomail.com', 'Minus officia id vol', 'https://www.cyxyzaxyj.com', 'Hello Everyone! Have a great day :) I am here to help you. If you want to know something or you have any suggestion then please mail me. Thank You.', 1, '2022-08-20 18:50:19', '2022-08-20 18:50:55'),
+(11, 'Jessamine Roberson', 'tycyxyryc@nomail.com', 'Expedita assumenda e', 'https://www.dejefihereri.net', 'Hello Everyone! Have a great day :) I am here to help you. If you want to know something or you have any suggestion then please mail me. Thank You.', 0, '2022-08-20 19:13:25', NULL);
 
 -- --------------------------------------------------------
 
@@ -467,7 +487,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `picture`, `resume`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Rabiul Islam', 'rixetbd@gmail.com', 'Rabiul Islam.png', 'Rabiul Islam.pdf', NULL, '$2y$10$Duq7nVsnV43lxUTw/4XCjuA7vwblSa2AI0pw4ysjKTcVy0eqaBFnW', NULL, '2022-03-11 09:16:50', '2022-03-11 09:17:30');
+(1, 'Rabiul Islam', 'rixetbd@gmail.com', 'Rabiul Islam.png', 'Rabiul Islam.pdf', NULL, '$2y$10$Duq7nVsnV43lxUTw/4XCjuA7vwblSa2AI0pw4ysjKTcVy0eqaBFnW', NULL, '2022-03-11 09:16:50', '2022-03-11 09:17:30'),
+(2, 'Ima Bartlett', 'tejuh@nomail.com', NULL, NULL, NULL, '$2y$10$rPqQKo8acONJpxAQCUVaD.jjId3MAS/YPaJqDW.kTdHhdk8FZHNiS', NULL, '2022-06-05 18:05:08', '2022-06-05 18:05:08'),
+(3, 'Muhammad Rabiul', 'kywolawer@nomail.com', 'Virginia Parrish.png', 'Virginia Parrish.pdf', NULL, '$2y$10$MLYpJlqfoVcRfuwXt6Izee7.RzyHroHKLVTFxxzubiG/hEL/31Tz6', NULL, '2022-06-25 10:24:46', '2022-08-20 17:29:58'),
+(4, 'Scarlett Houston', 'novidi@nomail.com', NULL, NULL, NULL, '$2y$10$l6Q47oVhV/jkZ/WnhcmGyOUuWG.fW96vcBGKT1wYBrPRQzt.y0aZK', NULL, '2022-08-20 19:48:09', '2022-08-20 19:48:09');
 
 --
 -- Indexes for dumped tables
@@ -611,7 +634,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `about_infos`
 --
 ALTER TABLE `about_infos`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `addresses`
@@ -623,7 +646,7 @@ ALTER TABLE `addresses`
 -- AUTO_INCREMENT for table `blogs`
 --
 ALTER TABLE `blogs`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `blog_comments`
@@ -635,7 +658,7 @@ ALTER TABLE `blog_comments`
 -- AUTO_INCREMENT for table `clients_mails`
 --
 ALTER TABLE `clients_mails`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `counters`
@@ -725,7 +748,7 @@ ALTER TABLE `testimonials`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
